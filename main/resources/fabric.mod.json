@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "v3nomish",
+	"version": "${version}",
+	"name": "V3nomish",
+	"description": "adding snakes that give custom status effects when they bite",
+	"authors": [
+		"V3ctorInDebt"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/v3nomish/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.v3ctor.v3nomish.V3nomish"
+		],
+		"client": [
+			"net.v3ctor.v3nomish.V3nomishClient"
+		],
+		"fabric-datagen": [
+			"net.v3ctor.v3nomish.V3nomishDataGenerator"
+		]
+	},
+	"mixins": [
+		"v3nomish.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
